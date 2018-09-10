@@ -4,10 +4,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+//The program is based on: https://github.com/matthiasludwig/cs50-pset2/blob/master/crack.c (with very little modification)
 //This program is an answer for problem set 1 in cs50 2018x
 //Salt is set as 50 by default, key is set as 4-letter string
 //hash1 = crypt(salt1, key1); hash2 = crypt(salt2, key2); Since all salts are set as 50, key1 = key2 if hash1 = hash2
 //The program is used for generating all possible keys and passing to the crypt() for cracking the key
+//I did not use any recurse function for this program, but will try in another version
 
 
 int check(int n);
